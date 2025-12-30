@@ -94,6 +94,7 @@ main {
     margin: 0; 
     width: 70%; 
     height: 20px; 
+    position: relative; 
 }
 
 .white-circle { 
@@ -101,7 +102,9 @@ main {
     border-radius: 50%;
     width: 20px; 
     height: 20px; 
-    margin-left: 162px;
+    // margin-left: 162px;
+    position: absolute; 
+    right: 0; 
 }
 
 .scale-div { 
