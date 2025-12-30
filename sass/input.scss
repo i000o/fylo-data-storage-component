@@ -9,7 +9,11 @@ body {
     align-items: center;
     font-family: 'raleway', sans-serif; 
     text-align: center;
-    background: url(../images/bg-mobile.png) no-repeat 100%; 
+    // background: url(../images/bg-mobile.png) no-repeat 100%; 
+    background-image: url(../images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100svh; 
 }
 
@@ -22,7 +26,8 @@ main {
     align-items: flex-start;
     border-top-right-radius: 50%; // new skill 
     border-top-left-radius: 12px;
-    border-bottom: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 
     .fylo-logo { 
         margin-top: 20px; 
@@ -55,6 +60,7 @@ main {
 }
 
 .storage-card { 
+    margin-top: -20px; // offset for the gap that was too big before 
     border-radius: 12px; 
 
     p { 
@@ -67,6 +73,37 @@ main {
     font-size: 0.9em; 
 }
 
+.full-usage-bar, .partial-usage-bar { 
+    width: 100%;
+    margin: 20px 0; 
+    margin-bottom: 10px; 
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px; 
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px; 
+}
+
+.full-usage-bar { 
+    background-color: hsl(229, 57%, 11%);
+    height: 25px;
+
+}
+
+.partial-usage-bar { 
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    margin: 0; 
+    width: 70%; 
+    height: 20px; 
+}
+
+.white-circle { 
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 20px; 
+    height: 20px; 
+    margin-left: 162px;
+}
+
 .scale-div { 
     display: flex; 
     flex-direction: row;
@@ -74,13 +111,6 @@ main {
     align-items: center;
     font-size: 0.8em; 
 }
-
-// .storage-left-div { 
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     align-items: center;
-// }
 
 .storage-left-text { 
     color: hsl(229, 57%, 11%); 
@@ -95,5 +125,12 @@ main {
         font-size: 0.35em; 
         text-transform: uppercase;
     }
+}
+
+footer { 
+    color: hsl(243, 100%, 93%); 
+    line-height: 160%;
+    font-size: 0.7em;
+    font-weight: 600;  
 }
 
