@@ -44,6 +44,15 @@ main {
   height: 75%;
 }
 
+.fylo-card, .storage-card {
+  background-color: hsl(228, 56%, 26%);
+  padding: 30px;
+  margin: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .fylo-card {
   align-items: flex-start;
   border-top-right-radius: 50%;
@@ -67,15 +76,6 @@ main {
   padding: 10px;
   background-color: hsl(229, 57%, 11%);
   border-radius: 12px;
-}
-
-.fylo-card, .storage-card {
-  background-color: hsl(228, 56%, 26%);
-  padding: 30px;
-  margin: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .storage-card {
@@ -160,7 +160,6 @@ footer {
     flex-direction: row;
     background-color: hsl(229, 57%, 11%);
     background-image: none;
-    width: 80svw;
   }
   body::before {
     content: "";
@@ -183,19 +182,65 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    height: 100%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
   }
   .fylo-card {
     flex-grow: 1;
+    height: 100%;
   }
   .storage-card {
-    margin: 0;
+    margin: 40px 20px;
+    padding: 30px;
     flex-grow: 2;
+    height: 60%;
+  }
+  .full-usage-bar {
+    position: relative;
   }
   .storage-left-text {
-    display: none;
+    position: absolute;
+    bottom: 180px;
+    right: 150px;
+  }
+  .usage-text {
+    text-align: left;
   }
   footer {
     position: absolute;
     bottom: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .storage-card {
+    padding: 40px;
+  }
+  .storage-left-text {
+    bottom: 420px;
+    right: 170px;
+  }
+  .storage-left-text::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 50px solid #ffffff;
+    position: absolute;
+    top: 80px;
+    right: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .storage-left-text {
+    bottom: 420px;
+    right: 220px;
   }
 }/*# sourceMappingURL=input.css.map */
