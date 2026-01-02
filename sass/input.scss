@@ -154,8 +154,8 @@ footer {
         left: 0; 
         background-image: url(../images/bg-desktop.png);
         background-position: bottom; // 
-        background-size: auto;
-        background-clip: border-box;
+        background-size: auto; // are these doing anything? 
+        background-clip: border-box; // are these doing anything? 
         border-top-left-radius: 50%;
         overflow: hidden;
         position: fixed;
@@ -170,7 +170,7 @@ footer {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 80%; 
+        width: 80%; // fragile 
         height: 100%; 
     }
 
