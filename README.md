@@ -24,8 +24,8 @@ My goal here is to refresh my knowledge of layouts some more and regain some con
 
 ## Outcome
 
-![](/images/mobile-screenshot.png)
-![](/images/desktop-screenshot.png)
+![](images/mobile-screenshot.png)
+![](images/desktop-screenshot.png)
 
 :jigsaw: [Live Site URL](https://github.com/i000o/fylo-data-storage-component.git)  
 :pencil2: [Solution URL](https://www.frontendmentor.io/solutions/fylo-data-storage-component-scXdL6CmcS)
